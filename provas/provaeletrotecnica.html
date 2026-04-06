@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Eletrotécnica</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Prova - Curso de Eletrotécnica</h1>
+    <p>Teste seus conhecimentos</p>
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. A corrente elétrica é:</h3>
+        <label><input type="radio" name="q1"> Movimento de elétrons</label><br>
+        <label><input type="radio" name="q1"> Tipo de material</label><br>
+
+        <h3>2. A Lei de Ohm relaciona:</h3>
+        <label><input type="radio" name="q2"> Força e velocidade</label><br>
+        <label><input type="radio" name="q2"> Tensão, corrente e resistência</label><br>
+
+        <h3>3. Em uma instalação elétrica, o disjuntor serve para::</h3>
+        <label><input type="radio" name="q3"> Decorar o circuito</label><br>
+        <label><input type="radio" name="q3"> Proteger contra sobrecarga</label><br>
+
+        <h3>4. Um circuito em série é aquele em que::</h3>
+        <label><input type="radio" name="q4"> Há apenas um caminho para a corrente</label><br>
+        <label><input type="radio" name="q4"> Há vários caminhos para a corrente</label><br>
+
+        <h3>5. Motores elétricos servem para:</h3>
+        <label><input type="radio" name="q5"> Gerar luz</label><br>
+        <label><input type="radio" name="q5"> Transformar energia elétrica em mecânica</label><br>
+
+        <h3>6. O contator é usado para:</h3>
+        <label><input type="radio" name="q6"> Controlar circuitos elétricos</label><br>
+        <label><input type="radio" name="q6"> Medir temperatura</label><br>
+
+        <h3>7. CLP significa:</h3>
+        <label><input type="radio" name="q7"> Controle Lógico Programável</label><br>
+        <label><input type="radio" name="q7"> Corrente Lenta Programada</label><br>
+
+        <h3>8. Sensores são dispositivos que:</h3>
+        <label><input type="radio" name="q8"> Detectam mudanças no ambiente</label><br>
+        <label><input type="radio" name="q8"> Armazenam energia</label><br>
+
+        <h3>9. O uso de EPI serve para:</h3>
+        <label><input type="radio" name="q9"> Aumentar o consumo de energia</label><br>
+        <label><input type="radio" name="q9"> Proteger o trabalhador</label><br>
+
+        <h3>10. A NR-10 trata de:</h3>
+        <label><input type="radio" name="q10"> Segurança em instalações elétricas</label><br>
+        <label><input type="radio" name="q10"> Regras de trânsito</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    const respostas = {
+        q1: 0,
+        q2: 1,
+        q3: 1,
+        q4: 0,
+        q5: 1,
+        q6: 0,
+        q7: 0,
+        q8: 0,
+        q9: 1,
+        q10: 0
+    };
+
+    for (let q in respostas) {
+        const opcoes = document.getElementsByName(q);
+        if (opcoes[respostas[q]].checked) {
+            pontos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 10 questões!";
+}
+</script>
+
+</body>
+</html>
