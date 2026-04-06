@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Mecânica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Prova - Curso de Mecânica</h1>
+    <p>Teste seus conhecimentos (sem pressão 😅)</p>
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. O desenho técnico serve principalmente para:</h3>
+        <label><input type="radio" name="q1"> Decorar projetos</label><br>
+        <label><input type="radio" name="q1"> Representar peças e projetos com precisão</label><br>
+        <label><input type="radio" name="q1"> Fazer cálculos financeiros</label><br>
+        <label><input type="radio" name="q1"> Organizar ferramentas</label><br>
+
+        <h3>2. O paquímetro é usado para:</h3>
+        <label><input type="radio" name="q2"> Medir peças com precisão</label><br>
+        <label><input type="radio" name="q2"> Cortar metais</label><br>
+        <label><input type="radio" name="q2"> Soldar peças</label><br>
+        <label><input type="radio" name="q2"> Pintar superfícies</label><br>
+
+        <h3>3. Metrologia está relacionada a:</h3>
+        <label><input type="radio" name="q3"> Montagem de motores</label><br>
+        <label><input type="radio" name="q3"> Medições e instrumentos</label><br>
+        <label><input type="radio" name="q3"> Transporte de peças</label><br>
+        <label><input type="radio" name="q3"> Vendas</label><br>
+
+        <h3>4. Usinagem faz parte de:</h3>
+        <label><input type="radio" name="q4"> Segurança do trabalho</label><br>
+        <label><input type="radio" name="q4"> Processos de fabricação</label><br>
+        <label><input type="radio" name="q4"> Recursos humanos</label><br>
+        <label><input type="radio" name="q4"> Logística</label><br>
+
+        <h3>5. Manutenção preventiva tem como objetivo:</h3>
+        <label><input type="radio" name="q5"> Consertar algo já quebrado</label><br>
+        <label><input type="radio" name="q5"> Evitar falhas antes que aconteçam</label><br>
+        <label><input type="radio" name="q5"> Aumentar custos</label><br>
+        <label><input type="radio" name="q5"> Parar máquinas</label><br>
+
+        <h3>6. Engrenagens são exemplos de:</h3>
+        <label><input type="radio" name="q6"> Ferramentas elétricas</label><br>
+        <label><input type="radio" name="q6"> Elementos de máquinas</label><br>
+        <label><input type="radio" name="q6"> Equipamentos de segurança</label><br>
+        <label><input type="radio" name="q6"> Produtos químicos</label><br>
+
+        <h3>7. EPIs são:</h3>
+        <label><input type="radio" name="q7"> Equipamentos de produção industrial</label><br>
+        <label><input type="radio" name="q7"> Equipamentos de proteção individual</label><br>
+        <label><input type="radio" name="q7"> Equipamentos de medição</label><br>
+        <label><input type="radio" name="q7"> Equipamentos de montagem</label><br>
+
+        <h3>8. A função da lubrificação é:</h3>
+        <label><input type="radio" name="q8"> Aumentar o atrito</label><br>
+        <label><input type="radio" name="q8"> Reduzir desgaste e atrito</label><br>
+        <label><input type="radio" name="q8"> Aquecer peças</label><br>
+        <label><input type="radio" name="q8"> Fixar peças</label><br>
+
+        <h3>9. Tornearia é um processo que:</h3>
+        <label><input type="radio" name="q9"> Mede peças</label><br>
+        <label><input type="radio" name="q9"> Remove material para dar forma</label><br>
+        <label><input type="radio" name="q9"> Transporta peças</label><br>
+        <label><input type="radio" name="q9"> Faz pintura industrial</label><br>
+
+        <h3>10. Segurança do trabalho é importante porque:</h3>
+        <label><input type="radio" name="q10"> Diminui a produtividade</label><br>
+        <label><input type="radio" name="q10"> Evita acidentes e protege o trabalhador</label><br>
+        <label><input type="radio" name="q10"> Aumenta custos sem motivo</label><br>
+        <label><input type="radio" name="q10"> Substitui treinamento</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    const respostas = {
+        q1: 1,
+        q2: 0,
+        q3: 1,
+        q4: 1,
+        q5: 1,
+        q6: 1,
+        q7: 1,
+        q8: 1,
+        q9: 1,
+        q10: 1
+    };
+
+    for (let q in respostas) {
+        const opcoes = document.getElementsByName(q);
+        if (opcoes[respostas[q]].checked) {
+            pontos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 10 questões!";
+}
+</script>
+
+</body>
+</html>
