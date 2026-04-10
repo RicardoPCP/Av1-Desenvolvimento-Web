@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Alimentos</title>
+    <link rel="stylesheet" href="../style.css">
+     <style>
+        header {
+            background-color: #A8D5BA;
+        }
+
+        footer {
+            background-color: #A8D5BA;
+        }
+
+        h2 {
+           color: #92C7A8;
+           border-left:solid #6DAA86 ;
+        }
+        h3 {
+            color: #92C7A8
+        }
+        section div:hover { 
+            border-color: #6DAA86;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prova - Curso de Alimentos</h1>
+    <p>Teste seus conhecimentos</p>
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. Em quais áreas o técnico em alimentos pode atuar:</h3>
+        <label><input type="radio" name="q1"> Apenas em restaurantes</label><br>
+        <label><input type="radio" name="q1"> Indústrias de alimentos, controle de qualidade e laboratórios</label><br>
+        <label><input type="radio" name="q1"> Somente em hospitais</label><br>  
+        <label><input type="radio" name="q1"> Apenas em supermercados</label><br>
+
+        <h3>2. Qual é uma das principais funções do técnico em alimentos:</h3>
+        <label><input type="radio" name="q2"> Vender produtos alimentícios</label><br>
+        <label><input type="radio" name="q2"> Criar receitas caseiras</label><br>
+        <label><input type="radio" name="q2"> Trabalhar apenas com marketing</label><br>
+        <label><input type="radio" name="q2"> Garantir a qualidade e segurança dos alimentos</label><br>
+
+        <h3>3. Qual matéria estuda a composição e as transformações dos alimentos:</h3>
+        <label><input type="radio" name="q3"> Microbiologia de Alimentos</label><br>
+        <label><input type="radio" name="q3"> Tecnologia de Alimentos</label><br>
+        <label><input type="radio" name="q3"> Química de Alimentos</label><br>
+        <label><input type="radio" name="q3"> Higiene Alimentar</label><br>
+
+        <h3>4. O que a Microbiologia de Alimentos estuda:</h3>
+        <label><input type="radio" name="q4"> Apenas embalagens</label><br>
+        <label><input type="radio" name="q4"> Máquinas industriais</label><br>
+        <label><input type="radio" name="q4"> Microrganismos que podem contaminar ou ajudar na produção</label><br>
+        <label><input type="radio" name="q4"> Estratégias de venda</label><br>
+
+        <h3>5. Qual é o foco da disciplina Higiene e Segurança Alimentar:</h3>
+        <label><input type="radio" name="q5"> Produção em larga escala</label><br>
+        <label><input type="radio" name="q5"> Evitar contaminações e garantir qualidade</label><br>
+        <label><input type="radio" name="q5"> Criar novos produtos</label><br>
+        <label><input type="radio" name="q5"> Estudar sabores</label><br>
+
+        <h3>6. A disciplina Análise de Alimentos tem como objetivo:</h3>
+        <label><input type="radio" name="q6"> Vender alimentos</label><br>
+        <label><input type="radio" name="q6"> Testar e avaliar a qualidade dos alimentos</label><br>
+        <label><input type="radio" name="q6"> Produzir alimentos em casa</label><br>
+        <label><input type="radio" name="q6"> Fazer propaganda</label><br>
+
+        <h3>7. O que se aprende em Tecnologia de Alimentos:</h3>
+        <label><input type="radio" name="q7"> Como cozinhar em casa</label><br>
+        <label><input type="radio" name="q7"> Como os alimentos são produzidos industrialmente</label><br>
+        <label><input type="radio" name="q7"> Como abrir um restaurante</label><br>
+        <label><input type="radio" name="q7"> Apenas higiene pessoal</label><br>
+
+        <h3>8. Qual é a duração do curso Técnico em Alimentos mencionado no texto:</h3>
+        <label><input type="radio" name="q8"> 6 meses</label><br>
+        <label><input type="radio" name="q8"> 1 ano</label><br>
+        <label><input type="radio" name="q8"> 2 anos</label><br>
+        <label><input type="radio" name="q8"> 4 anos</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    if (document.getElementsByName("q1")[1].checked) pontos++;
+    if (document.getElementsByName("q2")[3].checked) pontos++;
+    if (document.getElementsByName("q3")[2].checked) pontos++;
+    if (document.getElementsByName("q4")[2].checked) pontos++;
+    if (document.getElementsByName("q5")[1].checked) pontos++;
+    if (document.getElementsByName("q6")[1].checked) pontos++;
+    if (document.getElementsByName("q7")[1].checked) pontos++;
+    if (document.getElementsByName("q8")[2].checked) pontos++;
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 8 questões!";
+}
+</script>
+
+</body>
+</html>
