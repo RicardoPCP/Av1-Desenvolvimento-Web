@@ -1,3 +1,4 @@
+
 # AV1 - Desenvolvimento Web
 Este projeto foi desenvolvido como atividade avaliativa da disciplina de Desenvolvimento Web. Ele tem como objetivo aplicar os conhecimentos fundamentais, utilizando tecnologias básicas como HTML, CSS e JavaScript para construção de interfaces e organização de conteúdo.
 
@@ -51,4 +52,4 @@ Cursos com testes simples e rápidos;
 *Abra o arquivo index.html no seu navegador.
 
 # Colaboradores
-Desenvolvido por Ricardo Pessoa, Vinicius Xavier Veras, Eduardo Alejandro, Benedito Dias, 
+Desenvolvido por Ricardo Pessoa <img width="200" height="200" alt="comissao_ricardo" src="https://github.com/user-attachments/assets/c958d247-26ab-44d8-b54b-ec840360ae17" />, Vinicius Xavier Veras, Eduardo Alejandro, Benedito Dias, 
