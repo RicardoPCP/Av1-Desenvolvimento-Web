@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Prova - Curso de Administração</h1>
+    <p>Teste seus conhecimentos</p>
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. O que é planejamento estratégico?</h3>
+        <label><input type="radio" name="q1"> Organização de estoque</label><br>
+        <label><input type="radio" name="q1"> Definição de metas e estratégias</label><br>
+
+        <h3>2. O marketing digital utiliza:</h3>
+        <label><input type="radio" name="q2"> Redes sociais</label><br>
+        <label><input type="radio" name="q2"> Apenas rádio</label><br>
+
+        <h3>3. O fluxo de caixa controla:</h3>
+        <label><input type="radio" name="q3"> Pessoas</label><br>
+        <label><input type="radio" name="q3"> Entrada e saída de dinheiro</label><br>
+
+        <h3>4. RH é responsável por:</h3>
+        <label><input type="radio" name="q4"> Máquinas</label><br>
+        <label><input type="radio" name="q4"> Pessoas</label><br>
+
+        <h3>5. Logística envolve:</h3>
+        <label><input type="radio" name="q5"> Transporte e estoque</label><br>
+        <label><input type="radio" name="q5"> Apenas vendas</label><br>
+
+        <h3>6. Contabilidade serve para:</h3>
+        <label><input type="radio" name="q6"> Registrar finanças</label><br>
+        <label><input type="radio" name="q6"> Criar anúncios</label><br>
+
+        <h3>7. Branding está ligado a:</h3>
+        <label><input type="radio" name="q7"> Marca</label><br>
+        <label><input type="radio" name="q7"> Transporte</label><br>
+
+        <h3>8. Cadeia de suprimentos é:</h3>
+        <label><input type="radio" name="q8"> Fluxo de produtos</label><br>
+        <label><input type="radio" name="q8"> Gestão de pessoas</label><br>
+
+        <h3>9. Investimentos fazem parte de:</h3>
+        <label><input type="radio" name="q9"> Finanças</label><br>
+        <label><input type="radio" name="q9"> RH</label><br>
+
+        <h3>10. Recrutamento significa:</h3>
+        <label><input type="radio" name="q10"> Contratar pessoas</label><br>
+        <label><input type="radio" name="q10"> Vender produtos</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    const respostas = {
+        q1: 1,
+        q2: 0,
+        q3: 1,
+        q4: 1,
+        q5: 0,
+        q6: 0,
+        q7: 0,
+        q8: 0,
+        q9: 0,
+        q10: 0
+    };
+
+    for (let q in respostas) {
+        const opcoes = document.getElementsByName(q);
+        if (opcoes[respostas[q]].checked) {
+            pontos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 10 questões!";
+}
+</script>
+
+</body>
+</html>
