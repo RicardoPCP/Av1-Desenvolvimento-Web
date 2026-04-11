@@ -52,12 +52,22 @@ Cursos com testes simples e rápidos;
 *Abra o arquivo index.html no seu navegador.
 
 # Colaboradores
- <img width="100" height="100" src="https://github.com/user-attachments/assets/c958d247-26ab-44d8-b54b-ec840360ae17" />  Ricardo Pessoa
+<a href="https://github.com/beneditodias612-collab" target="blank"> <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/c9e67a3d-6092-4a45-9803-256e090939d6" /> Benedito Dias Conceição Dos Santos </a>
 
+<img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/ea2ef975-d00b-49e4-8bed-129d79b39e10" /> Eduardo Alejandro Rios Ramos Lopes
+
+<img width="456" height="456" alt="image" src="https://github.com/user-attachments/assets/313e084c-44a9-4c9d-aa0a-d471b0625ddf" /> Kauã Miranda
+
+<img width="415" height="417" alt="image" src="https://github.com/user-attachments/assets/320884be-e3c7-4f92-81c6-f3d4a3d5acf0" /> Neto Kaio Nascimento Silvestre
+
+<img width="456" height="455" alt="image" src="https://github.com/user-attachments/assets/2f9e6b08-445a-4b73-9a12-af8ab932938b" /> Lucas
+
+<img width="100" height="100" src="https://github.com/user-attachments/assets/c958d247-26ab-44d8-b54b-ec840360ae17" />  Ricardo Pessoa Campos Pereira
+
+<img width="418" height="416" alt="image" src="https://github.com/user-attachments/assets/841e414f-d854-4b12-b801-78ab3b76c3ab" /> Rodrigo Araújo da Silva Carneiro
 
 <img width="100" height="100" src="https://github.com/user-attachments/assets/603c8230-9eae-4e35-b172-2b9fee501575"/> Vinicius Xavier Veras 
 
 
-Eduardo Alejandro 
 
-Benedito Dias 
+
