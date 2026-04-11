@@ -52,9 +52,10 @@ Cursos com testes simples e rápidos;
 *Abra o arquivo index.html no seu navegador.
 
 # Colaboradores
-Ricardo Pessoa <img width="100" height="100" alt="comissao_ricardo" src="https://github.com/user-attachments/assets/c958d247-26ab-44d8-b54b-ec840360ae17" /> 
+ <img width="100" height="100" src="https://github.com/user-attachments/assets/c958d247-26ab-44d8-b54b-ec840360ae17" />  Ricardo Pessoa
 
-Vinicius Xavier Veras ![135277260](https://github.com/user-attachments/assets/603c8230-9eae-4e35-b172-2b9fee501575)
+
+<img width="100" height="100" src="https://github.com/user-attachments/assets/603c8230-9eae-4e35-b172-2b9fee501575"/> Vinicius Xavier Veras 
 
 
 Eduardo Alejandro 
