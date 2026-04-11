@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Enfermagem</title>
+    <link rel="stylesheet" href="styleenf.css">
+</head>
+
+<body>
+
+<header>
+    <div class="titulo">
+    <h1>Prova - Curso de Enfermagem</h1>
+     <p>Teste seus conhecimentos</p>
+    </div>
+    
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. O que é a Anatomia estuda?</h3>
+        <label><input type="radio" name="q1"> Apenas doenças</label><br>
+        <label><input type="radio" name="q1"> Estrutura do corpo humano </label><br>
+
+        <h3>2. Qual é o foco da Farmacologia?</h3>
+        <label><input type="radio" name="q2">  Administração de medicamentos e reações</label><br>
+        <label><input type="radio" name="q2"> Diagnóstico de doenças</label><br>
+
+        <h3>3. O que envolve os Fundamentos de Enfermagem?</h3>
+        <label><input type="radio" name="q3"> Técnicas de administração de medicamentos</label><br>
+        <label><input type="radio" name="q3"> Cuidados de Higiene e Monitoramento de Sinais de Alerta</label><br>
+
+        <h3>4. Em Microbiologia e Parasitologia, o que o enfermeiro estuda?</h3>
+        <label><input type="radio" name="q4"> Estruturas do corpo humano</label><br>
+        <label><input type="radio" name="q4"> Microrganismos e infecções</label><br>
+
+        <h3>5. O que são sinais vitais?</h3>
+        <label><input type="radio" name="q5"> Pressão arterial, frequência cardíaca, respiração e temperatura do paciente.</label><br>
+        <label><input type="radio" name="q5"> Peso e altura do paciente.</label><br>
+
+        <h3>6. Qual o objetivo da higienização?</h3>
+        <label><input type="radio" name="q6"> Evitar infecções e garantir um ambiente seguro para pacientes e profissionais.</label><br>
+        <label><input type="radio" name="q6"> Apenas manter a estética dos movéis e equipamentos do hospital.</label><br>
+
+        <h3>7. O que um erro na dosagem de remédios pode causar?</h3>
+        <label><input type="radio" name="q7"> Causa reações adversas graves, intoxicação ou até a morte do paciente, além de comprometer a eficácia do tratamento.</label><br>
+        <label><input type="radio" name="q7"> Nada, já que é corrigido naturalmente pelo corpo na próxima micção, não sendo necessário avisar o enfermeiro ou o médico sobre o ocorrido.</label><br>
+
+        <h3>8. Primeiros socorros servem para:</h3>
+        <label><input type="radio" name="q8"> Preservar a vida, evitar o agravamento do estado da vítima e prestar assistência imediata até a chegada do socorro especializado.</label><br>
+        <label><input type="radio" name="q8"> Substituir o atendimento médico definitivo e realizar cirurgias de emergência no local do acidente para curar a vítima.</label><br>
+
+        <h3>9. A saúde coletiva lida com: </h3>
+        <label><input type="radio" name="q9"> A promoção da saúde, prevenção de doenças e melhoria da qualidade de vida de grupos populacionais e comunidades.</label><br>
+        <label><input type="radio" name="q9"> O tratamento exclusivo de pacientes com plano de saúde em hospitais particulares e a venda de medicamentos em farmácias comerciais.</label><br>
+
+        <h3>10. O que envolve uma Enfermagem Médico-Cirúrgica?</h3>
+        <label><input type="radio" name="q10"> A realização de cirurgias plásticas estéticas de forma independente.</label><br>
+        <label><input type="radio" name="q10"> É a área da enfermagem que cuida de pacientes antes, durante e depois de cirurgias, e tratando pessoas com doenças clínicas.</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    const respostas = {
+        q1: 1,
+        q2: 0,
+        q3: 1,
+        q4: 1,
+        q5: 0,
+        q6: 0,
+        q7: 0,
+        q8: 0,
+        q9: 0,
+        q10: 1
+    };
+
+    for (let q in respostas) {
+        const opcoes = document.getElementsByName(q);
+        if (opcoes[respostas[q]].checked) {
+            pontos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 10 questões!";
+}
+</script>
+
+</body>
+</html>
