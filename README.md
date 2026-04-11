@@ -6,32 +6,48 @@ O objetivo deste trabalho é aplicar os conhecimentos desenvolvidos em sala sobr
 
 # Tecnologias Utilizadas
 HTML5;
+
 CSS3;
+
 JavaScript (básico);
+
 GitHub para versionamento;
 
 # Estrutura do Projeto
 📁materias
+
 📁provas
+
 \
+
 ── index.html
+
 ├── style.css
+
 ├── scriptadm.js
+
 └── README.md
 
 -A pasta de matérias estão com as páginas HTML dos cursos;
+
 -Pasta de provas contém as páginas com os questionários de cada curso.
 
 # Funcionalidades
 Estruturação de páginas web com HTML;
+
 Estilização de elementos com CSS;
+
 Interações básicas com JavaScript;
+
 Páginas com conteúdos de diversos cursos;
+
 Cursos com testes simples e rápidos;
 
 # Como Executar o Projeto
 *Clone este repositório: https://github.com/RicardoPCP/Av1-Desenvolvimento-Web
+
 *Acesse a pasta do projeto:Av1-Desenvolvimento-Web
+
 *Abra o arquivo index.html no seu navegador.
 
 # Colaboradores
