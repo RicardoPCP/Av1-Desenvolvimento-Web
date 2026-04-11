@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Logística</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Prova - Logística</h1>
+
+<form id="quizForm">
+
+<h3>1. O que é gestão de estoques:</h3>
+<label><input type="radio" name="q1"> Apenas vender produtos</label><br>
+<label><input type="radio" name="q1"> Controlar entrada e saída</label><br>
+<label><input type="radio" name="q1"> Fazer marketing</label><br>
+<label><input type="radio" name="q1"> Trabalhar com publicidade</label><br>
+
+<h3>2. Objetivo do transporte:</h3>
+<label><input type="radio" name="q2"> Armazenar produtos</label><br>
+<label><input type="radio" name="q2"> Produzir mercadorias</label><br>
+<label><input type="radio" name="q2"> Entregar ao cliente</label><br>
+<label><input type="radio" name="q2"> Fazer propaganda</label><br>
+
+<h3>3. Cadeia de suprimentos:</h3>
+<label><input type="radio" name="q3"> Apenas transporte</label><br>
+<label><input type="radio" name="q3"> Etapas até o consumidor</label><br>
+<label><input type="radio" name="q3"> Só vendas</label><br>
+<label><input type="radio" name="q3"> Controle de funcionários</label><br>
+
+<h3>4. Armazenagem:</h3>
+<label><input type="radio" name="q4"> Vender produtos</label><br>
+<label><input type="radio" name="q4"> Guardar produtos</label><br>
+<label><input type="radio" name="q4"> Fazer propaganda</label><br>
+<label><input type="radio" name="q4"> Transportar</label><br>
+
+<h3>5. Curva ABC:</h3>
+<label><input type="radio" name="q5"> Funcionários</label><br>
+<label><input type="radio" name="q5"> Importância dos produtos</label><br>
+<label><input type="radio" name="q5"> Rotas</label><br>
+<label><input type="radio" name="q5"> Segurança</label><br>
+
+<h3>6. Custos logísticos:</h3>
+<label><input type="radio" name="q6"> Marketing</label><br>
+<label><input type="radio" name="q6"> Analisar gastos</label><br>
+<label><input type="radio" name="q6"> Vendas</label><br>
+<label><input type="radio" name="q6"> Produção</label><br>
+
+<h3>7. Roteirização:</h3>
+<label><input type="radio" name="q7"> Organizar rotas</label><br>
+<label><input type="radio" name="q7"> Produzir</label><br>
+<label><input type="radio" name="q7"> Estocar</label><br>
+<label><input type="radio" name="q7"> Funcionários</label><br>
+
+<h3>8. Segurança do trabalho:</h3>
+<label><input type="radio" name="q8"> Evitar acidentes</label><br>
+<label><input type="radio" name="q8"> Aumentar vendas</label><br>
+<label><input type="radio" name="q8"> Marketing</label><br>
+<label><input type="radio" name="q8"> Organização</label><br>
+
+<br><br>
+<button type="button" onclick="corrigir()">Enviar</button>
+
+</form>
+
+<h2 id="resultado"></h2>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    if (document.getElementsByName("q1")[1].checked) pontos++;
+    if (document.getElementsByName("q2")[2].checked) pontos++;
+    if (document.getElementsByName("q3")[1].checked) pontos++;
+    if (document.getElementsByName("q4")[1].checked) pontos++;
+    if (document.getElementsByName("q5")[1].checked) pontos++;
+    if (document.getElementsByName("q6")[1].checked) pontos++;
+    if (document.getElementsByName("q7")[0].checked) pontos++;
+    if (document.getElementsByName("q8")[0].checked) pontos++;
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 8!";
+}
+</script>
+
+</body>
+</html>
