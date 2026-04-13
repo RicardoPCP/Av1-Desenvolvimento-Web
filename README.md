@@ -56,6 +56,8 @@ Cursos com testes simples e rápidos;
 
 <a href="https://github.com/rodrigoox7" target="_blank"> <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/841e414f-d854-4b12-b801-78ab3b76c3ab" /> Rodrigo Araújo da Silva Carneiro </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Viniverasss" target="_blank"> <img width="100" height="100" src="https://github.com/user-attachments/assets/603c8230-9eae-4e35-b172-2b9fee501575"/> Vinicius Xavier Veras </a>
 
+<a href="https://github.com/tuturupo" target="_blank"> <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/6103fa5e-d8c1-415f-98a4-f6604c005efe" /> João Lucas Lemos da Silva </a>
+
 
 
 
