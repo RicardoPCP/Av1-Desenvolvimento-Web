@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Informática</title>
+    <link rel="stylesheet" href="../styles/styleprovas.css">
+     <style>
+        header {
+            background-color: #007bff;
+        }
+
+        footer {
+            background-color: #007bff;
+        }
+
+        h2 {
+           color: #0056b3;
+           border-left:solid #003f7f ;
+        }
+        h3 {
+            color: #0056b3
+        }
+        section div:hover { 
+            border-color: #003f7f;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prova - Curso de Informática</h1>
+    <p>Teste seus conhecimentos</p>
+</header>
+
+<section>
+    <form id="quizForm">
+
+        <h3>1. Em quais áreas o técnico em informática pode atuar:</h3>
+        <label><input type="radio" name="q1"> Apenas manutenção de computadores</label><br>
+        <label><input type="radio" name="q1"> Desenvolvimento de sistemas, redes e suporte técnico</label><br>
+        <label><input type="radio" name="q1"> Somente em escolas</label><br>  
+        <label><input type="radio" name="q1"> Apenas com vendas</label><br>
+
+        <h3>2. Qual é uma das principais funções do técnico em informática:</h3>
+        <label><input type="radio" name="q2"> Criar apenas jogos</label><br>
+        <label><input type="radio" name="q2"> Trabalhar só com redes sociais</label><br>
+        <label><input type="radio" name="q2"> Fazer marketing digital</label><br>
+        <label><input type="radio" name="q2"> Desenvolver, manter sistemas e prestar suporte</label><br>
+
+        <h3>3. Qual matéria estuda a criação de algoritmos e resolução de problemas:</h3>
+        <label><input type="radio" name="q3"> Redes de Computadores</label><br>
+        <label><input type="radio" name="q3"> Banco de Dados</label><br>
+        <label><input type="radio" name="q3"> Lógica de Programação</label><br>
+        <label><input type="radio" name="q3"> Hardware</label><br>
+
+        <h3>4. O que a disciplina Redes de Computadores estuda:</h3>
+        <label><input type="radio" name="q4"> Apenas montagem de PCs</label><br>
+        <label><input type="radio" name="q4"> Programação de jogos</label><br>
+        <label><input type="radio" name="q4"> Conexão e comunicação entre dispositivos</label><br>
+        <label><input type="radio" name="q4"> Design gráfico</label><br>
+
+        <h3>5. Qual é o foco da disciplina Segurança da Informação:</h3>
+        <label><input type="radio" name="q5"> Criar sites</label><br>
+        <label><input type="radio" name="q5"> Proteger dados e sistemas contra ataques</label><br>
+        <label><input type="radio" name="q5"> Editar vídeos</label><br>
+        <label><input type="radio" name="q5"> Desenvolver jogos</label><br>
+
+        <h3>6. A disciplina Banco de Dados tem como objetivo:</h3>
+        <label><input type="radio" name="q6"> Criar imagens</label><br>
+        <label><input type="radio" name="q6"> Armazenar, organizar e manipular dados</label><br>
+        <label><input type="radio" name="q6"> Montar computadores</label><br>
+        <label><input type="radio" name="q6"> Trabalhar com redes sociais</label><br>
+
+        <h3>7. O que se aprende em Desenvolvimento Web:</h3>
+        <label><input type="radio" name="q7"> Apenas usar o computador</label><br>
+        <label><input type="radio" name="q7"> Criar sites e aplicações para internet</label><br>
+        <label><input type="radio" name="q7"> Apenas formatar PCs</label><br>
+        <label><input type="radio" name="q7"> Trabalhar com vendas online</label><br>
+
+        <h3>8. Qual é a duração média de um curso Técnico em Informática:</h3>
+        <label><input type="radio" name="q8"> 6 meses</label><br>
+        <label><input type="radio" name="q8"> 1 ano</label><br>
+        <label><input type="radio" name="q8"> 2 anos</label><br>
+        <label><input type="radio" name="q8"> 5 anos</label><br>
+
+        <br><br>
+        <button type="button" onclick="corrigir()">Enviar Respostas</button>
+
+    </form>
+
+    <h2 id="resultado"></h2>
+</section>
+
+<script>
+function corrigir() {
+    let pontos = 0;
+
+    if (document.getElementsByName("q1")[1].checked) pontos++;
+    if (document.getElementsByName("q2")[3].checked) pontos++;
+    if (document.getElementsByName("q3")[2].checked) pontos++;
+    if (document.getElementsByName("q4")[2].checked) pontos++;
+    if (document.getElementsByName("q5")[1].checked) pontos++;
+    if (document.getElementsByName("q6")[1].checked) pontos++;
+    if (document.getElementsByName("q7")[1].checked) pontos++;
+    if (document.getElementsByName("q8")[2].checked) pontos++;
+
+    document.getElementById("resultado").innerText =
+        "Você acertou " + pontos + " de 8 questões!";
+}
+</script>
+
+</body>
+</html>
