@@ -1,24 +1,8 @@
 /*variaveis (pra cor)*/
 :root {
-    --primary: #e5243b;
-    --primary-dark: #c81d32;
     --white: #ffffff;
     --text: #2f3640;
     --gray: #dcdde1;
-    --primaryadm: #312d88;         
-    --primary-darkadm: #2b2871;
-    --primaryeletr: #dfe300;         
-    --primary-darkeletr: #b9bc00;
-    --primaryenf: #08a348;
-    --primary-darkenf: #08a348;
-    --primaryinf: #007bff;         
-    --primary-darkinf: #0056b3;
-    --primarylog: #7a0078;         
-    --primary-darklog: #510050;
-    --primarymec: #1075ab;         
-    --primary-darkmec: #0e567c;
-    --primaryali: #d37f00;         
-    --primary-darklogali: #9b5d00;
 }
 
 body {
@@ -37,45 +21,6 @@ body {
 header{
     color: var(--white);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-header .home{
-    background: var(--primary);
-    padding: 15px 30px;
-}
-
-header .enf{
-    background: var(--primaryenf);
-    padding: 15px 30px;
-}
-
-header .inf{
-    background: var(--primaryinf);
-    padding: 15px 30px;
-}
-
-header .adm{
-    background: var(--primaryadm);
-    padding: 15px 30px;
-}
-
-header .eletr{
-    background: var(--primaryeletr);
-    padding: 15px 30px;
-}
-
-header .log{
-    background: var(--primarylog);
-    padding: 15px 30px;
-}
-
-header .mec{
-    background: var(--primarymec);
-    padding: 15px 30px;
-}
-
-header .ali{
-    background: var(--primaryali);
     padding: 15px 30px;
 }
 
@@ -119,76 +64,14 @@ header img {
     font-size: 14px;
 }
 
-.home h2 {
-    color: var(--primary);
+h2 {
     margin-bottom: 15px;
-    border-left: 5px solid var(--primary);
+    border-left: 5px solid;
     padding-left: 10px;
 }
 
-.home h3 {
+h3 {
     margin-top: 20px;
-    color: var(--primary-dark);
-}
-
-.enf h2 {
-    color: var(--primaryenf);
-    margin-bottom: 15px;
-    border-left: 5px solid var(--primaryenf);
-    padding-left: 10px;
-}
-
-.enf h3 {
-    margin-top: 20px;
-    color: var(--primary-darkenf);
-}
-
-.inf h2 {
-    color: var(--primaryinf);
-    margin-bottom: 15px;
-    border-left: 5px solid var(--primaryinf);
-    padding-left: 10px;
-}
-
-.inf h3 {
-    margin-top: 20px;
-    color: var(--primary-darkinf);
-}
-
-.adm h2 {
-    color: var(--primaryadm);
-    margin-bottom: 15px;
-    border-left: 5px solid var(--primaryadm);
-    padding-left: 10px;
-}
-
-.adm h3 {
-    margin-top: 20px;
-    color: var(--primary-darkadm);
-}
-
-.mec h2 {
-    color: var(--primarymec);
-    margin-bottom: 15px;
-    border-left: 5px solid var(--primarymec);
-    padding-left: 10px;
-}
-
-.mec h3 {
-    margin-top: 20px;
-    color: var(--primary-darkmec);
-}
-
-.log h2 {
-    color: var(--primarylog);
-    margin-bottom: 15px;
-    border-left: 5px solid var(--primarylog);
-    padding-left: 10px;
-}
-
-.log h3 {
-    margin-top: 20px;
-    color: var(--primary-darklog);
 }
 
 /*Barra de Pesquisa*/
@@ -210,15 +93,10 @@ header img {
 
 .search-box button {
     border: none;
-    background: var(--primary);
     color: var(--white);
     padding: 10px 15px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.search-box button:hover {
-    background: var(--primary-dark);
 }
 
 /*p*/
@@ -262,66 +140,13 @@ section div {
 }
 
 /*hover no card*/
-section.home div:hover {
+section div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-color: var(--primary);
-}
-
-section.adm div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-color: var(--primaryadm);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);;
 }
 
 /*rodape*/
-footer.home{
-    background: var(--primary);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-footer.enf{
-    background: var(--primaryenf);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-footer.inf{
-    background: var(--primaryinf);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-footer.adm{
-    background: var(--primaryadm);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-footer.mec{
-    background: var(--primarymec);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-footer.log{
-    background: var(--primarylog);
+footer{
     color: var(--white);
     text-align: center;
     padding: 15px;
@@ -344,12 +169,13 @@ footer.log{
     section {
         margin: 15px;
     }
+
 }
+
 .btn-prova {
     display: inline-block;
     margin-top: 15px;
     padding: 12px 20px;
-    background-color: #e5243b;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -358,8 +184,6 @@ footer.log{
 }
 
 .btn-prova:hover {
-    background-color: #c81d32;
     transform: scale(1.05);
 }
-
 

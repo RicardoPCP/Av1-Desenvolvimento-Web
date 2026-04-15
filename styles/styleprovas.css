@@ -52,7 +52,6 @@ section {
 /* PERGUNTAS */
 h3 {
     margin-top: 25px;
-    color: var(--primary-dark);
 }
 
 /* OPÇÕES */
@@ -69,7 +68,6 @@ label {
 /* HOVER NAS OPÇÕES */
 label:hover {
     background: #f1f7ff;
-    border-color: var(--primary);
 }
 
 /* RADIO BUTTON */
@@ -81,7 +79,6 @@ input[type="radio"] {
 button {
     margin-top: 25px;
     padding: 12px 25px;
-    background: var(--primary);
     color: white;
     border: none;
     border-radius: 8px;
@@ -93,7 +90,6 @@ button {
 
 /* HOVER BOTÃO */
 button:hover {
-    background: var(--primary-dark);
     transform: scale(1.05);
 }
 
