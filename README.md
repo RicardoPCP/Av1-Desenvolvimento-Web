@@ -13,6 +13,8 @@ GitHub para versionamento;
 # Estrutura do Projeto
 📁materias
 
+📁scripts
+
 📁provas
 
 \
@@ -20,8 +22,6 @@ GitHub para versionamento;
 ── index.html
 
 ├── style.css
-
-├── scriptadm.js
 
 └── README.md
 
