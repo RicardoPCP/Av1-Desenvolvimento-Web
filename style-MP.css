@@ -240,6 +240,18 @@ footer {
 }
 
 /* MOBILE PEQUENO */
+@media (max-width: 768px) {
+    .imgcurso {
+        max-width: 80%;   /* diminui a largura */
+        margin: 10px auto; /* centraliza */
+    }
+}
+
+@media (max-width: 480px) {
+    .imgcurso {
+        max-width: 70%;   /* ainda menor em telas bem pequenas */
+    }
+}
 @media (max-width: 480px) {
     header img {
         width: 50px;
