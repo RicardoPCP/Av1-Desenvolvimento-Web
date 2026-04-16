@@ -41,6 +41,21 @@ header img {
     width: 100px;
 }
 
+/* IMAGENS RESPONSIVAS */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imgcurso {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
 /* TÍTULO */
 .titulo {
     text-align: center;
@@ -209,6 +224,30 @@ footer {
 
     section {
         margin: 15px;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    .imgcurso {
+        max-width: 100%;
+    }
+
+    #parceiros-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 480px) {
+    header img {
+        width: 50px;
+    }
+
+    .imgcurso {
+        max-width: 100%;
+        margin: 10px 0;
     }
 }
 
