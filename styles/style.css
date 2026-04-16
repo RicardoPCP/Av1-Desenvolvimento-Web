@@ -169,9 +169,17 @@ footer{
     section {
         margin: 15px;
     }
-
+       
 }
+@media (max-width: 480px) {
+    header img {
+        width: 50px;
+    }
 
+    .imgcurso {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 .btn-prova {
     display: inline-block;
     margin-top: 15px;
